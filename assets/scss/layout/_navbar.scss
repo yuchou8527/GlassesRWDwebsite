@@ -1,0 +1,149 @@
+.navbar {
+    padding: 16px 0;
+    @include pad {
+        padding-bottom: 0;
+    }
+
+    &-wrap {
+        display: flex;
+        justify-content: space-between;
+        @include pad {
+            flex-direction: column;
+            padding-left: 0;
+            padding-right: 0;
+            max-width: 100%;
+        }
+    }
+
+    &-logo {
+        display: block;
+        width: 80px;
+        height: 48.57px;
+        background: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/logo-white.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        text-indent: 101%;
+        white-space: nowrap;
+        overflow: hidden;
+        @include pad {
+            margin: 0 0 16px 16px;
+        }
+    }
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    @include pad {
+        flex-wrap: wrap;
+    }
+
+    &-item {
+        height: 100%;
+        @include pad {
+            width: 50%;
+            margin-right: 0px;
+            border: 1px solid $light;
+        }
+        &:last-child .menu-link {
+            padding-right: 0;
+        }
+    }
+
+    &-link {
+        height: 100%;
+        display: block;
+        font-size: 20px;
+        color: $light;
+        padding: 8px 32px;
+        @include pad {
+            font-size: $h6-font-size;
+            text-align: center;
+            padding: 12px 0;
+        }
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+}
+
+//margin-bottom
+.mb-1 {
+    margin-bottom: 4px;
+}
+
+// 設定一個間距最大值的變數
+$max: 20;
+
+@for $i from 0 through $max {
+    // $i 是代表數字的變數
+    // $i from 0 through $max 代表會設定出 0~$max，也就是 0~10 的數字
+    // 最後就會編譯出 .mb-1 ~ .mb-20 共十種間距數值的 margin-bottom
+    .mb-#{$i} {
+    margin-bottom: $i * 4px;
+    }
+}
+
+@media (max-width: 768px) {
+    @for $i from 0 through $max {
+        .mb-md-#{$i} {
+        margin-bottom: $i * 4px;
+        }
+    }
+}
+
+@media (max-width: 375px) {
+    @for $i from 0 through $max {
+        .mb-sm-#{$i} {
+        margin-bottom: $i * 4px;
+        }
+    }
+}
+
+//margin-right
+.mr-1 {
+    margin-right: 4px;
+}
+
+$max: 20;
+
+@for $i from 0 through $max {
+    .mr-#{$i} {
+    margin-bottom: $i * 4px;
+    }
+}
+
+@media (max-width: 768px) {
+    @for $i from 0 through $max {
+        .mr-md-#{$i} {
+        margin-bottom: $i * 4px;
+        }
+    }
+}
+
+@media (max-width: 375px) {
+    @for $i from 0 through $max {
+        .mr-sm-#{$i} {
+        margin-bottom: $i * 4px;
+        }
+    }
+}
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+//padding
+.p-1 {
+    padding: 4px;
+}
+
+$max: 20;
+
+@for $i from 0 through $max {
+    .p-#{$i} {
+        padding: $i * 4px;
+    }
+}

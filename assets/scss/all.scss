@@ -1,0 +1,14 @@
+// @import "檔案的路徑"
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap');//Google Fonts
+@import "variable"; // 變數
+@import "reset"; // CSS Reset
+@import "mixin"; // mixin
+@import "base"; // 全站樣式 img{}, body{}
+@import "grid";
+@import "spacing";
+
+// 頁面
+@import './layout/navbar.scss';
+@import './layout/footer.scss';
+@import './pages/index.scss';
+@import './pages/product.scss';

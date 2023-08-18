@@ -1,0 +1,40 @@
+.footer {
+    padding: 60px 0 32px 0;
+    @include mobile {
+        padding: 24px 0;
+    }
+
+    &-policy {
+        font-size: $font-size-sm;
+        @include mobile {
+            font-size: $h6-font-size;
+        }
+    }
+
+    & a:hover {
+        opacity: 0.7;
+    }
+}
+
+.social-link {
+    width: 48px;
+    @include mobile {
+        width: 24px;
+    }
+}
+
+.contact-info {
+    border-bottom: 1px solid $light;
+    &-item {
+        font-size: $h3-font-size;
+        @include mobile {
+            font-size: $h6-font-size;
+        }
+    }
+}
+
+@include mobile {
+    .mt-sm-justify {
+        margin-top: -74px;
+    }
+}

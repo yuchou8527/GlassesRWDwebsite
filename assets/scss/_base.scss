@@ -1,0 +1,104 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', 'Noto Sans TC', sans-serif;
+    line-height: 1.5;
+}
+img {
+    display: block;
+    vertical-align: middle;
+    max-width: 100%;
+    height: auto;
+}
+a {
+    text-decoration: none;
+}
+h1, h2, h3, h4, h5, h6, p {
+    max-width: 100%;
+    overflow-wrap: break-word;
+}
+label, input {
+    display: block;
+}
+.container {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 12px;
+    @include pad {
+        max-width: 720px;
+    }
+    @include mobile {
+        max-width: 372px;
+    }
+}
+.d-flex {
+    display: flex;
+}
+@media (max-width: 375px) {
+    .sm-d-block {
+        display: block;
+    }
+
+    .sm-d-none {
+        display: none;
+    }
+}
+.flex-wrap {
+    flex-wrap: wrap;
+}
+.justify-space-between {
+    justify-content: space-between;
+}
+.align-items-center {
+    align-items: center;
+}
+@media(max-width: 768px) {
+    .md-flex-column {
+        flex-direction: column;
+    }
+    .md-align-items-center {
+        align-items: center;
+    }
+}
+@media(max-width: 375px) {
+    .sm-justify-end {
+        justify-content: flex-end;
+    }
+}
+.text-primary {
+    color: $primary;
+    &-dark {
+        color: $primary-dark;
+    }
+    &-light {
+        color: $primary-light;
+    }
+}
+.text-light {
+    color: $light;
+}
+.text-align-right {
+    text-align: right;
+}
+.text-align-center {
+    text-align: center;
+}
+.bg-primary {
+    background-color: $primary;
+    &-dark {
+        background-color: $primary-dark;
+    }
+    &-light {
+        background-color: $primary-light;
+    }
+}
+//Google ICON
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 700,
+    'GRAD' 0,
+    'opsz' 48;
+    vertical-align: sub;
+}
