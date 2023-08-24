@@ -43,7 +43,7 @@
         background-repeat: no-repeat;
         height: 296px;
         background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/product-header-1.png);
-        @include pad {
+        @include pad-large {
             background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/product-header-sm-1.png);
         }
         @include mobile {
@@ -56,7 +56,7 @@
         background-repeat: no-repeat;
         height: 296px;
         background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/product-header-2.png);
-        @include pad {
+        @include pad-large {
             background-image: url(https://res.cloudinary.com/dmr3mwawj/image/upload/v1692342085/product-header-sm-2_x52b1q.png);
         }
         @include mobile {
@@ -91,6 +91,12 @@
     &-name {
         font-size: $h4-font-size;
         color: $dark;
+        @include pad-large {
+            font-size: $h6-font-size;
+        }
+        @include pad {
+            font-size: $h4-font-size;
+        }
         &:hover {
             text-decoration: underline;
         }
@@ -100,6 +106,12 @@
         font-size: $h4-font-size;
         font-weight: 500;
         color: $primary;
+        @include pad-large {
+            font-size: $h6-font-size;
+        }
+        @include pad {
+            font-size: $h4-font-size;
+        }
     }
 
     &-color-left {
@@ -120,7 +132,7 @@
         width: 372px;
         border: 1px solid $page-number;
         @include mobile {
-            width: 330px;
+            width: 300px;
         }
 
         &-number{
@@ -133,7 +145,7 @@
             @include mobile {
                 font-size: $h6-font-size;
                 padding: 12px 14px;
-                width: 38px;
+                width: 36px;
             }
             &:hover {
                 background-color: $dark;
@@ -154,7 +166,7 @@
             padding: 12px 0;
             @include mobile {
                 font-size: $h6-font-size;
-                width: 70px;
+                width: 60px;
             }
             &:hover {
                 background-color: $dark;
@@ -170,7 +182,7 @@
             padding: 12px 0;
             @include mobile {
                 font-size: $h6-font-size;
-                width: 70px;
+                width: 60px;
             }
             &:hover {
                 background-color: $dark;

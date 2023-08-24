@@ -1,3 +1,89 @@
+//格線系統
+//欄寬
+.col-1 {
+    width: 8.333%;
+}
+
+.col-2 {
+    width: 16.666%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.333%;
+}
+
+.col-5 {
+    width: 41.666%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.333%;
+}
+
+.col-8 {
+    width: 66.666%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.333%;
+}
+
+.col-11 {
+    width: 91.666%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .col-md-6 {
+        width: 50%;
+    }
+
+    .col-md-10 {
+        width: 83.333%;
+    }
+
+    .col-md-12 {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .col-sm-4 {
+        width: 100%;
+    }
+
+    .col-sm-2 {
+        width: 50%;
+    }
+}
+
+.px-3 {
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.row {
+    margin-left: -12px;
+    margin-right: -12px;
+    display: flex;
+}
+
+//spacing
 //margin-bottom
 .mb-1 {
     margin-bottom: 4px;
@@ -23,7 +109,7 @@ $max: 20;
     }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 576px) {
     @for $i from 0 through $max {
         .mb-sm-#{$i} {
         margin-bottom: $i * 4px;
@@ -52,7 +138,7 @@ $max: 20;
     }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 576px) {
     @for $i from 0 through $max {
         .mr-sm-#{$i} {
             margin-right: $i * 4px;
@@ -99,7 +185,7 @@ $max: 20;
     }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 576px) {
     @for $i from 0 through $max {
         .pb-sm-#{$i} {
         padding-bottom: $i * 4px;
