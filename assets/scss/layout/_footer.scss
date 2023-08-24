@@ -4,6 +4,10 @@
         padding: 24px 0;
     }
 
+    &-menu {
+        margin-top: -28px;
+    }
+
     &-policy {
         font-size: $font-size-sm;
         @include mobile {
@@ -35,6 +39,6 @@
 
 @include mobile {
     .mt-sm-justify {
-        margin-top: -74px;
+        margin-top: -48px;
     }
 }

@@ -88,6 +88,12 @@
         &:hover {
             opacity: 0.7;
         }
+        @include pad-large {
+            font-size: $h3-font-size;
+        }
+        @include pad {
+            font-size: $h2-font-size;
+        }
     }
 }
 
@@ -175,6 +181,10 @@
         box-shadow: 0px 2px 6px #00000029;
     }
 
+    &-text {
+        min-height: 200px;
+    }
+
     &-date {
         font-size: $font-size-sm;
         color: $secondary-light;
@@ -204,7 +214,7 @@
     }
 
     &-form {
-        & input[type=text] {
+        & input[type=text], input[type=tel], input[type=email] {
             width: 100%;
             padding: 12px 6px;
             border: 1px solid $dark;

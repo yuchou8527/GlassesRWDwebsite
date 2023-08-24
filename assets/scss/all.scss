@@ -4,8 +4,7 @@
 @import "reset"; // CSS Reset
 @import "mixin"; // mixin
 @import "base"; // 全站樣式 img{}, body{}
-@import "grid";
-@import "spacing";
+@import "utils"; //格線系統、spacing
 
 // 頁面
 @import './layout/navbar.scss';
